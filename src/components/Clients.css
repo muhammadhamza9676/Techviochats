@@ -1,0 +1,60 @@
+
+#clients {
+    padding: 60px 0;
+  }
+ 
+  .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+  }
+  
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+  }
+  
+  .slick-slide img {
+    max-width: 80%;
+    opacity: 0.5;
+    transition: 0.3s;
+    padding: 15px 0;
+  }
+  
+  .slick-slide img:hover {
+    opacity: 1;
+  }
+  
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    /* border-radius: 50%;
+    background-color: #ddd; */
+    border: none;
+  }
+  
+  

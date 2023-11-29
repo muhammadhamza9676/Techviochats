@@ -1,0 +1,148 @@
+/* #faq {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  #faq #faq-list {
+    padding: 0;
+    list-style: none;
+  }
+  
+  #faq #faq-list li {
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  #faq #faq-list a {
+    padding: 22px 0;
+    display: block;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  
+  #faq #faq-list i {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  
+  #faq #faq-list p {
+    margin-bottom: 20px;
+  }
+  
+  #faq #faq-list a.collapse .active {
+    color: #4da6e7;
+  }
+  
+  #faq #faq-list a.collapsed {
+    color: #000;
+  }
+  
+  #faq #faq-list a.collapsed i::before {
+    content: "\f2c7" !important;
+  }
+
+
+@media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  
+    #faq #faq-list a {
+      font-size: 18px;
+    }
+  
+    #faq #faq-list i {
+      top: 13px;
+    }
+  } */
+
+  #faq {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  #faq #faq-list {
+    padding: 0;
+    list-style: none;
+  }
+  
+  #faq #faq-list li {
+    border-bottom: 1px solid #ebebeb;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  #faq #faq-list a {
+    padding: 22px 0;
+    display: block;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer; 
+  }
+  
+  #faq #faq-list a:hover {
+    color: #4da6e7;
+    cursor: pointer; 
+  }
+
+  
+  
+  #faq #faq-list i {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* #faq #faq-list a:hover i {
+    transform: rotate(45deg);
+  } */
+  
+  #faq #faq-list p .active  {
+    margin-bottom: 20px;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  #faq #faq-list .collapse .active {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Add a transition effect */
+  }
+  
+  #faq #faq-list .collapse.show .active  {
+    max-height: 100px; /* Adjust as needed */
+    transition: max-height 0.3s ease-in; /* Transition when opening */
+  }
+
+  #faq #faq-list .collapse.show p .active  {
+    max-height: 100px; 
+    transition: max-height 0.3s ease-in;
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  
+    #faq #faq-list a {
+      font-size: 18px;
+    }
+  
+    #faq #faq-list i {
+      top: 13px;
+    }
+  }
+  
